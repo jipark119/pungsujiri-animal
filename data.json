@@ -1,0 +1,62 @@
+[
+  {
+    "Address": "439-449 Columbus Ave, New York, NY 10024, USA",
+    "Items_Accepted": "Snake",
+    "lat": 40.78351,
+    "long": -73.97428
+  },
+  {
+    "Address": "Pelham Gardens, The Bronx, NY, USA",
+    "Items_Accepted": "Bat",
+    "lat": 40.86879,
+    "long": -73.84615
+  },
+  {
+    "Address": "Astoria, New York 11106, USA",
+    "Items_Accepted": "Elephant",
+    "lat": 40.761311,
+    "long": -73.928146
+  },
+  {
+    "Address": "Marty Veterinaria, 6206 Fresh Pond Rd, Middle Village, NY 11379, United States",
+    "Items_Accepted": "Butterfly",
+    "lat": 40.71345,
+    "long": -73.90118
+  },
+  {
+    "Address": "451-433 Eastern Pkwy, Brooklyn, NY 11216, USA",
+    "Items_Accepted": "Unicorn",
+    "lat": 40.67049,
+    "long": -73.95404
+  },
+  {
+    "Address": "94-108 Bayard St, New York, NY 10013, USA",
+    "Items_Accepted": "Duck",
+    "lat": 40.71596,
+    "long": -73.99931
+  },
+  {
+    "Address": "Central Harlem, New York, NY 10027, USA",
+    "Items_Accepted": "Dog",
+    "lat": 40.81103,
+    "long": -73.95316
+  },
+  {
+    "Address": "53-74-53-98 72nd Pl, Maspeth, NY 11378, USA",
+    "Items_Accepted": "Pheonix",
+    "lat": 40.73086,
+    "long": -73.89145
+  },
+  {
+    "Address": "Roosevelt Island, New York, NY 10044, USA",
+    "Items_Accepted": "Centipede",
+    "lat": 40.76404,
+    "long": -73.94696
+  },
+  {
+    "Address": "Grand Army Plaza, Brooklyn, NY 11238, USA",
+    "Items_Accepted": "Butterfly",
+    "lat": 40.67349,
+    "long": -73.97048
+  }
+ ]

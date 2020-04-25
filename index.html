@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>School Shooting Data</title>
+    	<meta charset="utf-8">
+    	<meta name="description" content="School Shooting Data">
+    	<meta name="keywords" content="School,Shooting,Gun,Violence,Data,Graphic,Design">
+    	<meta name="author" content="Ji Park">
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="https://use.typekit.net/kqm1zqp.css" />
+
+		<link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8"/>
+		 <script data-require="jquery@2.1.4" data-semver="2.1.4" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+	  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
+
+
+	<body>
+
+		<img class='comp' src="compass.png"></img>
+
+		<div id='map'></div>
+		<div id="txt">
+			<div class="title">Pungsujiri animals <br />of New York</div>
+			<img src="hand.png" />
+			<div class="txt">
+	  <!--         Pungsujiri means "wind-water-earth-principles-theory". 
+			  This ancient art of geomancy have long believed that the harmony and spirituality between land and 
+			  human. The core of this belief is that a good location will bring peace and prosperity 
+			  not only to oneself, but also to one’s descendants.  Animals are powerful totemistic symbols in Pungsujiri. -->
+			 This Pungsujiri Map of New York ritual is designed to guide you all over the city. 
+			 It will activate specific luck areas in your life, bringing you peace and prosperity 
+			  not only to oneself, but also to one’s descendants.  
+			 <h1 style="font-size:25px;margin-top:20px">Instruction</h1>
+			  <br>
+			  1. Take a deep breath, listen to your heart. See what lacks/need improvement in your life.
+			  <br>
+			  <br>
+			  2. Select pungsujiri animal on map. 
+			  <br>
+			  <br>
+
+			  <img src="iphone.png" />
+			  <br>
+			  3. Send the map to your phone and start your ritual by physically (or virtually!) walking along the route. 
+			  <br>
+			  <br>
+			  Enjoy and good luck on your quest!
+
+			  
+			</div>
+
+
+		</div>
+		<script src='math.js'></script>
+		<script>
+
+	mapboxgl.accessToken = 'pk.eyJ1IjoiamlldW5wYXJrMTE5IiwiYSI6ImNqZmw2cXQwbzBkcDgzM25hY3BqMzNnb2EifQ.27Y5OoGB1uqZDviMWymDyQ';
+
+		var map = new mapboxgl.Map({
+		  container: 'map',
+		  style: 'mapbox://styles/jieunpark119/cjneunx4y2ufr2snt3qccnkb2',
+		  center: [-73.8033383,40.7852112],
+		  zoom: 10
+		});
+
+
+		var geojson = {
+		   "type": "FeatureCollection",
+		   "features": [
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [  -73.97428,40.78351]
+		    },
+		    "properties": {
+		    "school_name":"Snake",
+			"map":`<iframe src="https://www.google.com/maps/embed?pb=!1m24!1m8!1m3!1d48340.09919552531!2d-73.987163!3d40.7783814!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m3!3m2!1d40.7736087!2d-73.9600892!4m3!3m2!1d40.7777019!2d-73.96960059999999!4m3!3m2!1d40.7832839!2d-73.97459839999999!5e0!3m2!1sen!2skr!4v1587800141730!5m2!1sen!2skr" width="350" height="280" frameborder="0" style="border:1px solid black;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>`,
+			"lat": 40.78351,
+   			"long": -73.97428,
+			"img":"snake.png",
+			"sym":"<span class='sym' style='background:Coral'>Intelligence</span> <span class='sym' style='background:pink'>Prosperity</span> <span class='sym' style='background:Cyan'>Determination</span> <span class='sym' style='background:red'>Romance</span> <span class='sym' style='background:red'>Love</span>",
+			"reading":"Snake bring intelligence, determination, romance, and passion. This route will be very useful in times of crisis."
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -73.84615,40.86879 ]
+		    },
+		    "properties": {
+				"school_name":"Bat",
+				"map":`<iframe src="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d48286.96733962299!2d-73.90852860000001!3d40.851340800000024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e2!4m3!3m2!1d40.8562888!2d-73.83384339999999!4m5!1s0x89c2f411adcd4e0d%3A0x38f85c2ac3303591!2s275%20Roberto%20Clemente%20State%20Park%20Bridge%2C%20The%20Bronx%2C%20NY%2010453%2C%20USA!3m2!1d40.8531511!2d-73.92069699999999!4m3!3m2!1d40.8532556!2d-73.8745742!4m3!3m2!1d40.8571187!2d-73.8409799!5e0!3m2!1sen!2skr!4v1587735981519!5m2!1sen!2skr" width="350" height="280" frameborder="0" style="border:1px solid black;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>`,
+				"lat": 40.86879,
+    			"long": -73.84615,
+				"img":"bat.png",
+				"sym":"<span class='sym' style='background:green'>Wealth</span> <span class='sym' style='background:pink'>Prosperity</span> <span class='sym' style='background:yellow'>Inspiration</span> <span class='sym' style='background:skyblue'>New Perspective</span>",
+				"reading":" Bat hangs upside down, and for this reason, the bat is a symbol of unique perspective and original inspiration. It will encourage the you to look at the world in a different way. Also, the bat brings wealth and prosperity."
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -73.928146,40.761311]
+		    },
+		    "properties": {
+				"school_name":"Elephant",
+				"map":`<iframe src="https://www.google.com/maps/embed?pb=!1m42!1m8!1m3!1d26273.25177206638!2d-73.93599612888846!3d40.76113741543273!3m2!1i1024!2i768!4f13.1!4m31!3e2!4m3!3m2!1d40.7612527!2d-73.9172128!4m3!3m2!1d40.7576393!2d-73.92259!4m5!1s0x89c25f36e7b5a553%3A0x9c0aafc4ac84110e!2sAstoria!3m2!1d40.7643574!2d-73.92346189999999!4m3!3m2!1d40.7620788!2d-73.9187456!4m3!3m2!1d40.759707299999995!2d-73.92057009999999!4m3!3m2!1d40.7612598!2d-73.9238812!4m3!3m2!1d40.7628045!2d-73.9225957!5e0!3m2!1sen!2skr!4v1587800770281!5m2!1sen!2skr" width="350" height="280" frameborder="0" style="border:1px solid black;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>`,
+				"lat": 40.761311,
+  				 "long": -73.928146,
+				 "img":"elephant.png",
+				"sym":"<span class='sym' style='background:Coral'>Intelligence</span> <span class='sym' style='background:Lavender'>Strength</span> <span class='sym' style='background:Moccasin'>Fertility</span>",
+				"reading":"The elephant is a long-time symbol of great strength, intelligence, and fertility. The elephant is also associated with great strength because it is the largest and most powerful animal on land. This route will help you heal your weakness and it will strengthen and protect you"
+
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -73.90118,40.71345 ]
+		    },
+		    "properties": {
+				"school_name":"Butterfly",
+				"map":`<iframe src="https://www.google.com/maps/embed?pb=!1m32!1m8!1m3!1d135444.12974030775!2d-73.96007532050645!3d40.71358264671702!3m2!1i1024!2i768!4f13.1!4m21!3e2!4m3!3m2!1d40.7129153!2d-73.90063669999999!4m3!3m2!1d40.714436!2d-73.93544419999999!4m3!3m2!1d40.7047844!2d-73.9289936!4m3!3m2!1d40.7212321!2d-73.9032258!4m3!3m2!1d40.713364!2d-73.9008631!5e0!3m2!1sen!2skr!4v1587801202888!5m2!1sen!2skr" width="350" height="280" frameborder="0" style="border:1px solid black;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>`,
+				"lat": 40.71345,
+   				 "long": -73.90118,
+				"img":"butterfly.png",
+				"sym":"<span class='sym' style='background:MistyRose'>Creativity</span> <span class='sym' style='background:red'>Love</span> <span class='sym' style='background:SpringGreen'>Freedom</span>",
+				"reading":"Butterflies are a symbol of creativity, love and freedom. It will encourage you to enjoy life and stop taking everything so seriously. As butterflies know how to gracefully go through transformational stages to become the beauty that they are, you will be guided to do the same with ease and grace in your life. "
+
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -73.95404,40.67049 ]
+		    },
+		    "properties": {
+				"school_name":"Unicorn",
+				"map":`<iframe src="https://www.google.com/maps/embed?pb=!1m30!1m8!1m3!1d11451.676548762198!2d-73.95486958830129!3d40.67050643174794!3m2!1i1024!2i768!4f13.1!4m19!3e2!4m3!3m2!1d40.670219599999996!2d-73.9532961!4m5!1s0x89c25b9be525efd1%3A0x2f5ea2fb86d23f7!2s1350%20Bedford%20Ave%2C%20Brooklyn%2C%20NY%2011216%2C%20USA!3m2!1d40.6773488!2d-73.9530193!4m3!3m2!1d40.6702046!2d-73.9555422!4m3!3m2!1d40.670181799999995!2d-73.9534865!5e0!3m2!1sen!2skr!4v1587801601211!5m2!1sen!2skr" width="350" height="280" frameborder="0" style="border:1px solid black;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>`,
+				"lat": 40.67049,
+   				 "long": -73.95404,
+				"img":"unicorn.png",
+				"sym":"<span class='sym' style='background:Coral'>Intelligence</span> <span class='sym' style='background:Gainsboro'>Peace</span> <span class='sym' style='background:Gold'>Protection</span>",
+				"reading":" Unicorn is a symbol of peace, protection and intelligence. The unicorn's horn represent protection from harm. Across East Asia, the unicorn is one of the four noble animals, along with the dragon, the phoenix, and the tortoise."
+
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -73.99931,40.71596 ]
+		    },
+		    "properties": {
+				"school_name":"Duck",
+				"map":`<iframe src="https://www.google.com/maps/embed?pb=!1m43!1m8!1m3!1d12096.627452889681!2d-74.0083111!3d40.7145632!3m2!1i1024!2i768!4f13.1!4m32!3e2!4m4!2s40.71609%2C%20-73.99991%20%20%20!3m2!1d40.71609!2d-73.99991!4m5!1s0x89c25a205576bbff%3A0x31fba8ee7f6da858!2s111%20Worth%20Street%2C%20111%20Worth%20St%2C%20New%20York%2C%20NY%2010013%2C%20USA!3m2!1d40.7159459!2d-74.0033459!4m3!3m2!1d40.714066599999995!2d-74.00335079999999!4m3!3m2!1d40.7151397!2d-74.0021253!4m3!3m2!1d40.7135525!2d-73.9986869!4m3!3m2!1d40.7150501!2d-73.9968628!4m3!3m2!1d40.716082799999995!2d-73.9998025!5e0!3m2!1sen!2skr!4v1587802796755!5m2!1sen!2skr" width="350" height="280" frameborder="0" style="border:1px solid black;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>`,
+				"lat": 40.71596,
+    		"long": -73.99931,
+			"img":"duck.png",
+				"sym":"<span class='sym' style='background:red'>Romance</span> <span class='sym' style='background:red'>Love</span>",
+				"reading":"Ducks symbolize love, romance, devotion, love. They are often used to brign single people luck in finding their partners because ducks mate for life, thus representing the symbol of eternal love. If you alread have partner in your life, this route will improve you relationship with additional romance and resolve problems"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -73.95316,40.81103 ]
+		    },
+		    "properties": {
+				"school_name":"Dog",
+				"map":`<iframe src="https://www.google.com/maps/embed?pb=!1m52!1m8!1m3!1d12079.958841749914!2d-73.9570753!3d40.8062199!3m2!1i1024!2i768!4f13.1!4m41!3e2!4m3!3m2!1d40.8076496!2d-73.9452195!4m3!3m2!1d40.8112618!2d-73.95400599999999!4m3!3m2!1d40.8100729!2d-73.9532363!4m3!3m2!1d40.8075744!2d-73.9549986!4m3!3m2!1d40.806967!2d-73.95352319999999!4m3!3m2!1d40.808183799999995!2d-73.9526769!4m3!3m2!1d40.807086!2d-73.94983599999999!4m3!3m2!1d40.8059212!2d-73.9507047!4m3!3m2!1d40.8046249!2d-73.9477512!4m3!3m2!1d40.807518099999996!2d-73.94569109999999!5e0!3m2!1sen!2skr!4v1587802851577!5m2!1sen!2skr" width="350" height="280" frameborder="0" style="border:1px solid black;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>`,
+				"lat": 40.81103,
+    			"long": -73.95316,
+				"img":"dog.png",
+				"sym":"<span class='sym' style='background:Lavender'>Strength</span> <span class='sym' style='background:Gold'>Protection</span> <span class='sym' style='background:green'>Wealth</span>",
+				"reading":"Dogs are great guardians and watchmen. They offer protection and strength. Traditionally in East Asia, dogs are placed in front of Imperial palaces, temples, and government offices. They were also a traditional feng shui symbol of family wealth and social status and were placed in front of wealthy homes."
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -73.89145,40.73086 ]
+		    },
+		    "properties": {
+				"school_name":"Phoenix",
+				"map":`<iframe src="https://www.google.com/maps/embed?pb=!1m32!1m8!1m3!1d48370.82461175365!2d-73.9051259!3d40.7361408!3m2!1i1024!2i768!4f13.1!4m21!3e2!4m3!3m2!1d40.7277876!2d-73.89231199999999!4m3!3m2!1d40.7299362!2d-73.9108366!4m3!3m2!1d40.7287436!2d-73.9059771!4m3!3m2!1d40.7386935!2d-73.8774924!4m3!3m2!1d40.7287963!2d-73.8907621!5e0!3m2!1sen!2skr!4v1587803397852!5m2!1sen!2skr" width="350" height="280" frameborder="0" style="border:1px solid black;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>`,
+			    "lat": 40.73086,
+    			"long": -73.89145,
+				"img":"phoenix.png",
+				"sym":"<span class='sym' style='background:Gold'>Protection</span> <span class='sym' style='background:DeepPink'>Happiness</span>",
+				"reading":"The phoenix is the nurturing, female symbol. It brings protection and happiness. They grant long happiness, happy marriages, and a thriving peace throughout the world.  "
+
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -73.94696,40.76404 ]
+		    },
+		    "properties": {
+				"school_name":"Centipede",
+				"map":`<iframe src="https://www.google.com/maps/embed?pb=!1m38!1m8!1m3!1d48348.523393139294!2d-73.9618698!3d40.7668036!3m2!1i1024!2i768!4f13.1!4m27!3e2!4m3!3m2!1d40.752979599999996!2d-73.9577393!4m5!1s0x89c258b6800a34e7%3A0x7df52bbfd5a41f47!2sRoosevelt%20Island%2C%20New%20York%2C%20NY%2010044%2C%20USA!3m2!1d40.7715499!2d-73.9413093!4m3!3m2!1d40.7700732!2d-73.9441992!4m3!3m2!1d40.764588499999995!2d-73.9484805!4m3!3m2!1d40.754100699999995!2d-73.9580452!4m3!3m2!1d40.753177799999996!2d-73.958123!5e0!3m2!1sen!2skr!4v1587803655182!5m2!1sen!2skr" width="350" height="280" frameborder="0" style="border:1px solid black;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>`,
+				"lat": 40.76404,
+    			"long": -73.94696,
+				"img":"centipede.png",
+				"sym":"<span class='sym' style='background:DarkTurquoise'>Good luck</span> <span class='sym' style='background:pink'>Prosperity</span>",
+				"reading":"They are often considered irritating and terrifying but it is a symbol of good luck and prosperity. In pungsujiri, they are often referred as 'money bug', because it means money is coming your way. Traditionally, in Korean culture, if you spot a centipede, one should never kill or harm it. Instead, one should cheer and wish for prosperity"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -73.97048,40.67349 ]
+		    },
+		    "properties": {
+				"school_name":"Butterfly",
+				"map":`<iframe src="https://www.google.com/maps/embed?pb=!1m42!1m8!1m3!1d48421.1089565512!2d-73.9651678!3d40.6669329!3m2!1i1024!2i768!4f13.1!4m31!3e2!4m3!3m2!1d40.6727682!2d-73.9705225!4m5!1s0x89c25b12854648ef%3A0x594f3d26be733855!2s495%20Flatbush%20Ave%2C%20Brooklyn%2C%20NY%2011225%2C%20USA!3m2!1d40.6625048!2d-73.9614225!4m3!3m2!1d40.6716547!2d-73.9627021!4m3!3m2!1d40.673099799999996!2d-73.9694852!4m3!3m2!1d40.6840817!2d-73.9774115!4m3!3m2!1d40.6817699!2d-73.9675036!4m3!3m2!1d40.6727985!2d-73.9704283!5e0!3m2!1sen!2skr!4v1587804113274!5m2!1sen!2skr" width="350" height="280" frameborder="0" style="border:1px solid black;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>`,
+				"lat": 40.67349,
+    			"long": -73.97048,
+				"img":"butterfly.png",
+				"sym":"<span class='sym' style='background:MistyRose'>Creativity</span> <span class='sym' style='background:red'>Love</span> <span class='sym' style='background:SpringGreen'>Freedom</span>",
+				"reading":"Butterflies are a symbol of creativity, love and freedom. It will encourage you to enjoy life and stop taking everything so seriously. As butterflies know how to gracefully go through transformational stages to become the beauty that they are, you will be guided to do the same with ease and grace in your life. "
+
+		    }
+		  }
+		]
+		};//geojson
+
+		geojson.features.forEach(function(marker) {
+
+
+		  var el = document.createElement('img');
+	      el.src = marker.properties.img;
+		//   el.innerHTML = `<img src="${marker.properties.img}">`;
+		  el.className = "marker";
+ 
+
+		  new mapboxgl.Marker(el)
+		.setLngLat(marker.geometry.coordinates)
+		.setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups	
+		// .setHTML('<div class="info"><div class="school-name">'+marker.properties.school_name+'<div class="gmap_canvas"><iframe width="300" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q='+marker.properties.lat+'%2C'+marker.properties.long+'&t=k&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>'))																																																																"https://maps.google.com/maps?q=41.41978%2C-73.277751&t=k&z=13&ie=UTF8&iwloc=&output=embed"
+		.setHTML('<div class="info"><div class="animal-title">'+marker.properties.school_name+'</div><div class="symBox">'+marker.properties.sym+'</div><div class="gMap">'+marker.properties.map+'</div><div class="reading">'+marker.properties.reading+'</div></div>'))
+		.addTo(map);
+	//    .setHTML('<div class="info">'+marker.properties.school_name+'</div>')
+		// .setHTML(`<div class="info ${marker.properties.school_name}">${marker.properties.school_name}</div>`)
+		// .addTo(map);
+
+		});
+
+		</script>
+
+	</body>
+</html>
